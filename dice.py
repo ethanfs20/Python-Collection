@@ -1,15 +1,15 @@
-import random
+import random # Import our python modules here.
 import time
 
-counter = 0
+counter = 0 # Initialize our counter variable to 0
 
-RPS = ["Rock", "Paper", "Scissors"]
+RPS = ["Rock", "Paper", "Scissors"] # Our array set to var RPS
 
-rand = random.choice(RPS)
+rand = random.choice(RPS) # Initialize var rand to a random string from our array RPS
 
-human = input("Rock, Paper, or Scissors? ")
+human = input("Rock, Paper, or Scissors? ") # set var human to users input.
 
-while counter < 4:
+while counter < 4: # main section that performs the counter and prints the selections.
     counter = counter + 1
     if counter == 1:
         time.sleep(1)
@@ -28,7 +28,7 @@ else:
     time.sleep(0.3)
     print(f"You: I choose {human}")
 
-if rand == "Rock":
+if rand == "Rock": # This entire section checks for all posibilites and prints the loosing and winnings.
     if human == "Scissors":
         print("You lost!")
     elif human == "Paper":
